@@ -79,7 +79,7 @@
         <name>Λίστα Τοποθεσιών</name>
         <Folder>\n`;
 
-            const filteredData = data.filter(row => row['Latitude'] && row['Longitude'] && (row['Pillar ID Number'] || row['ΦΟΠ-ΠΙΛΑΡ']));
+            const filteredData = data.filter(row => row['Latitude'] && row['Longitude'] && (row['Light ID Number'] || row['Pillar ID Number'] || row['ΦΟΠ-ΠΙΛΑΡ']));
             filteredData.forEach(row => {
             const name = row['Light ID Number'] || row['Pillar ID Number'] || row['ΦΟΠ-ΠΙΛΑΡ'];
             const latitude = `${row['Latitude']}`.replace(',', '.');
