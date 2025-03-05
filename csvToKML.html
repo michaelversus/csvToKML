@@ -73,7 +73,8 @@
                 return;
             }
 
-            kmlContent = `<?xml version='1.0' encoding='UTF-8' standalone='yes' ?><n0:kml xmlns:n0="http://earth.google.com/kml/2.0">
+            kmlContent = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <kml xmlns="http://www.opengis.net/kml/2.2">
       <Document>
         <name>Λίστα Τοποθεσιών</name>
         <Folder>\n`;
@@ -100,7 +101,7 @@
             kmlContent += `
         </Folder>
       </Document>
-    </n0:kml>`;
+    </kml>`;
 
             // Enable button and update UI
             statusMessage.textContent = "✅ File processed successfully!";
